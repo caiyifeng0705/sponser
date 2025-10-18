@@ -1,0 +1,32 @@
+name: 赞助添加申请
+description: 在本站添加赞助的申请
+title: 赞助添加申请
+body:
+- type: checkboxes
+  id: agree
+  attributes:
+    label: 确认
+    description: 请确认您满足可添加赞助的需求
+    options:
+      - label: 已了解 https://caiyifeng.top/ 中添加赞助的规则
+        required: true
+- type: input
+  id: site-name
+  attributes:
+    label: 名称
+    description: 你的名字
+    placeholder: LYEy_isine
+  validations:
+    required: true
+- type: input
+  id: site-desc
+  attributes:
+    label: 简介
+    description: 描述（可选）
+    placeholder: 为美好的生活献礼
+- type: input
+  id: site-img
+  attributes:
+    label: 头像
+    description: 你的头像链接（推荐）
+    placeholder: https://img.cdn1.vip/i/68bbdee513eb9_1757142757.webp
