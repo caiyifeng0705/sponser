@@ -1,32 +1,40 @@
-name: 赞助添加申请
-description: 在本站添加赞助的申请
-title: 赞助添加申请
+name: 友联添加申请
+description: 在本站添加友联的申请
+title: 友联添加申请
 body:
 - type: checkboxes
   id: agree
   attributes:
     label: 确认
-    description: 请确认您满足可添加赞助的需求
+    description: 请确认您满足可添加友联的需求
     options:
-      - label: 已了解 https://caiyifeng.top/ 中添加赞助的需求
+      - label: 已了解 https://caiyifeng.top/ 中添加站点的需求
         required: true
 - type: input
   id: site-name
   attributes:
-    label: 名称
-    description: 你的名字
-    placeholder: LYEy_isine
+    label: 站点名称
+    description: 你的站点名字
+    placeholder: LYEy_isine个人博客
   validations:
     required: true
 - type: input
   id: site-desc
   attributes:
-    label: 简介
-    description: 描述（可选）
+    label: 站点简介
+    description: 站点的描述（可选）
     placeholder: 为美好的生活献礼
+- type: input
+  id: site-link
+  attributes:
+    label: 站点地址
+    description: 站点的主页链接
+    placeholder: https://caiyifeng.top/
+  validations:
+    required: true
 - type: input
   id: site-img
   attributes:
-    label: 头像
-    description: 你的头像链接（推荐）
+    label: 站点头像
+    description: 你的站点头像链接（推荐）
     placeholder: https://img.cdn1.vip/i/68bbdee513eb9_1757142757.webp
